@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mall regression" tests="4" failures="1" errors="0" skipped="0" time="5.11">
+  <testcase classname="tests.ui.TestCheckout" name="test_submit_order" time="1.02" />
+  <testcase classname="tests.api.TestOrder" name="test_create_order" time="3.80">
+    <failure message="ReadTimeout">HTTPSConnectionPool: Read timed out after 3 seconds</failure>
+  </testcase>
+  <testcase classname="tests.api.TestUser" name="test_register_user" time="0.18" />
+  <testcase classname="tests.api.TestProduct" name="test_product_detail" time="0.11" />
+</testsuite>
+

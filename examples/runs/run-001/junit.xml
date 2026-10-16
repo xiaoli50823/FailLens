@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mall regression" tests="4" failures="2" errors="1" skipped="0" time="14.22">
+  <testcase classname="tests.ui.TestCheckout" name="test_submit_order" time="8.31">
+    <failure message="TimeoutError: locator.click: Timeout 5000ms exceeded">waiting for locator("#submit-order") to be visible</failure>
+    <system-out>page=/checkout browser=chromium</system-out>
+  </testcase>
+  <testcase classname="tests.api.TestOrder" name="test_create_order" time="1.24">
+    <failure message="AssertionError: expected 200 but got 500">HTTP status 500 Internal Server Error; request_id=req-1042</failure>
+  </testcase>
+  <testcase classname="tests.api.TestUser" name="test_register_user" time="0.67">
+    <error message="IntegrityError">duplicate key value violates unique constraint users_email_key</error>
+  </testcase>
+  <testcase classname="tests.api.TestProduct" name="test_product_detail" time="0.13" />
+</testsuite>
+

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "faillens"
+version = "0.2.0"
+description = "Explainable automated-test failure diagnosis and flaky-test reporting"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "潘晓漓"}]
+license = {text = "MIT"}
+
+[project.scripts]
+faillens = "faillens.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["faillens*"]
+
+[tool.setuptools.package-data]
+faillens = ["templates/*.html"]
+
